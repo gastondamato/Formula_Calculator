@@ -1,2 +1,2 @@
 # Formula_Calculator
-Created with CodeSandbox
+Formula Calculator challenge for freecodecamp
