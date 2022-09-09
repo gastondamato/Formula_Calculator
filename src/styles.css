@@ -81,6 +81,7 @@ body {
   display: block;
   padding: 0 10px;
   font-family: "LCD", sans-serif;
+  overflow: hidden;
 }
 
 button {
