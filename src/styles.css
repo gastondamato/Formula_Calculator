@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "LCD";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Digital-7 Mono"),
+    url("https://fonts.cdnfonts.com/s/17796/digital-7 (mono italic).woff")
+      format("woff");
+}
+
+:root {
+  --radius: 15px;
+  --orange: #f2a33c;
+  --clear: #5c585d;
+  --normal: #777477;
+  --color: #eaeaeb;
+  --display: #4a464b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #c2c2d6;
+  cursor: default;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.calc {
+  width: 320px;
+  height: 446px;
+  position: relative;
+  border-radius: var(--radius);
+  background: var(--display);
+  box-shadow: 0 0 10px gray;
+}
+
+#zero {
+  border-bottom-left-radius: var(--radius);
+}
+
+#equals {
+  border-bottom-right-radius: var(--radius);
+}
+
+.panel {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.formula {
+  min-height: 20px;
+  font-size: 20px;
+  color: var(--orange);
+  text-align: right;
+  vertical-align: text-top;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  display: block;
+  padding: 10px 10px;
+  font-family: "LCD", sans-serif;
+}
+
+.display {
+  font-size: 59px;
+  color: var(--color);
+  text-align: right;
+  line-height: 80px;
+  display: block;
+  padding: 0 10px;
+  font-family: "LCD", sans-serif;
+}
+
+button {
+  display: inline-block;
+  position: relative;
+  height: 65px;
+  width: 80px;
+  background-color: var(--normal);
+  border: 0.7px solid var(--display);
+  color: var(--color);
+  font-size: 1.5em;
+  font-family: "LCD", sans-serif;
+}
+
+button#clear,
+button#zero {
+  width: 160px;
+}
+
+button#equals {
+  height: 130px;
+  bottom: 65px;
+}
+
+button#clear {
+  background-color: #5c585d;
+}
+
+button.operator {
+  background-color: #f2a33c;
+}
+
+button:hover,
+button#clear:hover {
+  background-color: lightgray;
+  color: var(--display);
+}
+
+h1 {
+  padding: 20px;
+  font-family: "LCD", sans-serif;
+  display: block;
+}
