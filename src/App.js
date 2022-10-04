@@ -1,3 +1,9 @@
+// TODO
+// activate keydown
+// Gamification
+// add rotation and word detection
+// create point system depending of word and formula dificulty
+
 import { useState } from "react";
 import "./styles.css";
 
